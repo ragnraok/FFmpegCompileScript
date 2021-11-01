@@ -52,3 +52,6 @@ Mkfile.old
 dkms.conf
 
 /iOSBuild/FFMpegTest/
+/iOSBuild/build/
+/macOSBuild/build
+/androidBuild/build/
