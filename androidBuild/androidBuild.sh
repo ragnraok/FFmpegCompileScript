@@ -4,7 +4,7 @@
 
 source ../configureOptions.sh
 
-NDK=/Users/ragnarok/android-ndk-r12b
+NDK=$HOME/android-ndk-r12b
 PLATFORM_PREFIX=aarch64-linux-android-
 PLATFORM_VERSION=4.9
 TOOLCHAIN=$NDK/toolchains/${PLATFORM_PREFIX}${PLATFORM_VERSION}/prebuilt/darwin-x86_64
