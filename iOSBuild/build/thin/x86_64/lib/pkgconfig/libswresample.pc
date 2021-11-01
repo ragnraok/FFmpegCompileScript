@@ -1,0 +1,14 @@
+prefix=/Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/iOSBuild/build/thin/x86_64
+exec_prefix=${prefix}
+libdir=/Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/iOSBuild/build/thin/x86_64/lib
+includedir=/Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/iOSBuild/build/thin/x86_64/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 3.7.100
+Requires: libavutil >= 56.51.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}

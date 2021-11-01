@@ -1,0 +1,14 @@
+prefix=/Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/androidBuild/libFFmpeg
+exec_prefix=${prefix}
+libdir=/Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/androidBuild/libFFmpeg/lib
+includedir=/Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/androidBuild/libFFmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.51.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

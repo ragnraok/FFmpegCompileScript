@@ -1,0 +1,84 @@
+checking for -Werror=unknown-warning-option... yes
+checking for -Werror=unknown-attributes... yes
+checking for -Werror=attributes... yes
+checking for -Werror=ignored-attributes... yes
+x264 configure script
+Command line options: "--enable-static" "--enable-pic" "--disable-cli" "--host=aarch64-apple-darwin" "--extra-cflags=-arch" "arm64" "-fembed-bitcode" "-mios-version-min=7.0" "--extra-asflags=-arch" "arm64" "-fembed-bitcode" "-mios-version-min=7.0" "--extra-ldflags=-arch" "arm64" "-fembed-bitcode" "-mios-version-min=7.0" "--prefix=/Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/iOSBuild/build/thin-x264/arm64"
+
+checking whether xcrun -sdk iphoneos clang works... yes
+checking whether xcrun -sdk iphoneos clang supports for( int i = 0; i < 9; i++ ); with -std=gnu99... yes
+checking whether xcrun -sdk iphoneos clang supports __attribute__((force_align_arg_pointer))... no
+Failed commandline was:
+--------------------------------------------------
+xcrun -sdk iphoneos clang conftest.c  -Wall -I. -I$(SRCPATH) -arch arm64 -fembed-bitcode -mios-version-min=7.0 -std=gnu99 -D_GNU_SOURCE   -Werror=unknown-warning-option -Werror=unknown-attributes -Werror=attributes -Werror=ignored-attributes    -arch arm64 -fembed-bitcode -mios-version-min=7.0 -lm -o conftest
+conftest.c:1:16: error: unknown attribute 'force_align_arg_pointer' ignored [-Werror,-Wunknown-attributes]
+__attribute__((force_align_arg_pointer))
+               ^
+1 error generated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+__attribute__((force_align_arg_pointer))
+int main (void) {  return 0; }
+--------------------------------------------------
+checking whether xcrun -sdk iphoneos clang supports __asm__("cmeq v0.8h, v0.8h, #0");... yes
+checking whether /Volumes/Ragnarok/Personal/Project/FFmpegCompileScript/iOSBuild/../x264/tools/gas-preprocessor.pl -arch aarch64 -- xcrun -sdk iphoneos clang supports .func test
+.endfunc... yes
+checking for pthread_create(0,0,0,0); in pthread.h... yes
+checking for volatile float x = 2; return log2f(x); in math.h... yes
+checking for strtok_r(0, 0, 0); in string.h... yes
+checking for clock_gettime(CLOCK_MONOTONIC, 0); in time.h... yes
+checking whether defined(MAP_PRIVATE) is true... yes
+checking for uint32_t test_vec __attribute__ ((vector_size (16))) = {0,1,2,3}; in stdint.h... yes
+checking for stdio.h... no
+Failed commandline was:
+--------------------------------------------------
+xcrun -sdk iphoneos clang conftest.c  -Wall -I. -I$(SRCPATH) -arch arm64 -fembed-bitcode -mios-version-min=7.0 -std=gnu99 -D_GNU_SOURCE -fPIC   -Werror=unknown-warning-option -Werror=unknown-attributes -Werror=attributes -Werror=ignored-attributes -shared -Wl,-Bsymbolic   -arch arm64 -fembed-bitcode -mios-version-min=7.0 -lm -lpthread -o conftest
+ld: unknown option: -Bsymbolic
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <stdio.h>
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -fno-tree-vectorize... yes
+checking for fseeko(stdin,0,0); in stdio.h... yes
+checking for -Wshadow... yes
+checking for -Wmaybe-uninitialized... no
+Failed commandline was:
+--------------------------------------------------
+xcrun -sdk iphoneos clang conftest.c -Wshadow -O3 -ffast-math  -Wall -I. -I$(SRCPATH) -arch arm64 -fembed-bitcode -mios-version-min=7.0 -std=gnu99 -D_GNU_SOURCE -fPIC -fomit-frame-pointer -fno-tree-vectorize   -Werror=unknown-warning-option -Werror=unknown-attributes -Werror=attributes -Werror=ignored-attributes -Wmaybe-uninitialized   -arch arm64 -fembed-bitcode -mios-version-min=7.0 -lm -lpthread -o conftest
+error: unknown warning option '-Wmaybe-uninitialized'; did you mean '-Wuninitialized'? [-Werror,-Wunknown-warning-option]
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -fvisibility=hidden... yes
+
+platform:       AARCH64
+byte order:     little-endian
+system:         MACOSX
+cli:            no
+libx264:        internal
+shared:         no
+static:         yes
+bashcompletion: no
+asm:            yes
+interlaced:     yes
+avs:            no
+lavf:           no
+ffms:           no
+mp4:            no
+gpl:            yes
+thread:         posix
+opencl:         yes
+filters:        crop select_every
+lto:            no
+debug:          no
+gprof:          no
+strip:          no
+PIC:            yes
+bit depth:      all
+chroma format:  all
