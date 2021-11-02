@@ -64,3 +64,7 @@ dkms.conf
 
 /iOSBuild/FFmpeg-iOS
 /iOSBuild/x264-iOS
+/iOSBuild/scratch
+/iOSBuild/thin
+/iOSBuild/scratch-x264
+/iOSBuild/thin-x264
