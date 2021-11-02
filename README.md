@@ -9,7 +9,7 @@ then change your ffmpeg configure options in ``configureOptions.sh``
 
 ### Build mac OS target
 
-run ``cd macOSBuild && ./macOSBuild.sh``, it will output the library in ``macOSBuild/build``
+run ``cd macOSBuild && ./macOSBuild.sh``, it will output the library in ``macOSBuild/libFFmpeg`` and ``macOSBuild/libx264``
 
 ### Build Android target
 
