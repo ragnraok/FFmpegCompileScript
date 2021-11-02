@@ -55,5 +55,5 @@ dkms.conf
 /iOSBuild/build
 /macOSBuild/build
 /androidBuild/build
-libFFmpeg
-libx264
+*/libFFmpeg
+*/libx264
