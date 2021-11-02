@@ -58,6 +58,8 @@ dkms.conf
 
 /macOSBuild/libFFmpeg
 /macOSBuild/libx264
+/macOSBuild/Makefile
+/macOSBuild/.depend
 
 /androidBuild/libFFmpeg
 /androidBuild/libx264
