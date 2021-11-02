@@ -1,0 +1,6 @@
+[submodule "FFmpeg_release_4_3"]
+	path = FFmpeg_release_4_3
+	url = https://github.com/FFmpeg/FFmpeg.git
+[submodule "iOSBuild/gas-preprocessor"]
+	path = iOSBuild/gas-preprocessor
+	url = https://github.com/libav/gas-preprocessor.git
